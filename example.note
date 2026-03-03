@@ -1,0 +1,149 @@
+# noteLang Example
+
+A quick tour of all supported syntax elements.
+
+---
+
+## Inline Formatting
+
+Normal text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
+
+A [link to Neovim](https://neovim.io) and an image:
+
+![Neovim logo](https://neovim.io/images/logo@2x.png)
+
+---
+
+## Headings
+
+# H1 Heading
+## H2 Heading
+### H3 Heading
+#### H4 Heading
+##### H5 Heading
+###### H6 Heading
+
+---
+
+## Lists
+
+Unordered:
+
+- Apples
+- Bananas
+  - Cavendish
+  - Plantain
+- Cherries
+
+Ordered:
+
+1. First step
+2. Second step
+3. Third step
+   1. Sub-step A
+   2. Sub-step B
+
+---
+
+## Blockquote
+
+> This is a blockquote.
+> It can span multiple lines and supports **inline formatting**.
+
+---
+
+## Code Block
+
+```lua
+local function greet(name)
+  print("Hello, " .. name .. "!")
+end
+
+greet("world")
+```
+
+---
+
+## Pipe Table
+
+| Language | Paradigm | Year |
+| --- | --- | --- |
+| Lua | Multi-paradigm | 1993 |
+| Rust | Systems | 2015 |
+| Pythsd | High-level | 1991 |
+
+---
+
+## Definition List
+
+:: API :: Application Programming Interface — a contract between software components.
+:: DSL :: Domain-Specific Language — a language tailored to a particular problem domain.
+
+---
+
+## Diagrams
+
+@flow {
+  Login -> Dashboard
+  Dashboard -> Profile
+  Dashboard -> Settings
+  Settings -> Logout
+}
+
+@seq {
+  Client -> Server: GET /notes
+  Server -> DB: SELECT *
+  DB -> Server: rows
+  Server -> Client: 200 JSON
+}
+
+@mindmap {
+  noteLang
+    Syntax
+      Headings
+      Lists
+      Tables
+    Preview
+      Auto-reload
+      Mermaid
+    Neovim
+      Syntax highlighting
+      Commands
+}
+
+@table {
+  Name, Role, Status
+  Alice, Engineer, Active
+  Bob, Designer, Active
+  Carol, Manager, On leave
+}
+
+---
+
+## Raw Mermaid
+
+@graph {
+graph TD
+  A[Start] --> B{Decision}
+  B -- Yes --> C[Do the thing]
+  B -- No --> D[Skip it]
+  C --> E[End]
+  D --> E
+}
+
+---
+
+
+## Table Examples
+
+
+@table(2, 2){
+    hello, there
+    new, table
+}
+
+
+table(this, 2, 2) 
+
+|hello|there|
+|new|table|
