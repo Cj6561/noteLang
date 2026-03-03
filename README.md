@@ -118,8 +118,6 @@ def hello():
 
 ## Symbol Shortcuts
 
-### Arrows
-
 | Write | Renders as | Escape to suppress |
 |-------|-----------|-------------------|
 | `-->` | → | `\-->` |
@@ -128,11 +126,6 @@ def hello():
 | `==>` | ⇒ | `\==>` |
 | `<==` | ⇐ | `\<==` |
 | `<=>` | ⇔ | `\<=>` |
-
-### Math Symbols
-
-| Write | Renders as | Escape to suppress |
-|-------|-----------|-------------------|
 | `>=` | ≥ | `\>=` |
 | `<=` | ≤ | `\<=` |
 | `\(e` | ∈ | — |
@@ -182,6 +175,36 @@ Header B
 .notes(1, 0) {
 Cell content
 supports multiple lines
+}
+```
+
+Add `, true` as a fourth argument to make the first row a bold header:
+
+```
+table(scores, 2, 3, true) { }
+
+.scores(0, 0) {
+Name
+}
+
+.scores(0, 1) {
+Score
+}
+
+.scores(1, 0) {
+Alice
+}
+
+.scores(1, 1) {
+98
+}
+
+.scores(2, 0) {
+Bob
+}
+
+.scores(2, 1) {
+87
 }
 ```
 
